@@ -19,9 +19,7 @@ export default function Main() {
                             <p><strong>Titolo Originale:</strong> {movie.original_title}</p>
                             
                             <p><strong>Lingua:</strong> 
-                                <img 
-                                    src={getFlagUrl(movie.original_language)} 
-                                />
+                                <img src={getFlagUrl(movie.original_language)} />
                                 {movie.original_language}
                             </p>  
                             

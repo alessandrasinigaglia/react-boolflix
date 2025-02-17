@@ -17,6 +17,15 @@ export default function SearchBar() {
                 query: search,
             },
         }).then((res) => setMovies(res.data.results));
+        
+        axios.get("https://api.themoviedb.org/3/search/tv", {
+            params: {
+                api_key: "971e3767b14bc37cb33c1872ffbde5f4",
+                query: search,
+            },
+        }).then((res) => {
+            setMovies(prevMovies => [...prevMovies, ...res.data.results]);
+        });
     }
 
     return (

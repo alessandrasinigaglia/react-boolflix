@@ -16,6 +16,7 @@
 body {
     color: white;
     background-color: black;
+    font-family: "Montserrat", serif
 }
 
 /*HEADER*/
@@ -28,7 +29,42 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 150px;
 }
+
+.searchbar {
+    margin-right: 70px;
+}
+
+.searchbar input {
+  border-radius: 20px;
+  padding: 5px 15px;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: black;
+  color: white;
+  border: 2px solid grey;
+}
+
+.searchbar button {
+    background-color: transparent;
+    border: 2px solid grey;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+.searchbar i {
+    font-size: 16px;
+    color: white;
+}
+
+/* MAIN */
+
+
+
+
+
+
 
 
 

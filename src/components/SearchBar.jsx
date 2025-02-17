@@ -29,7 +29,7 @@ export default function SearchBar() {
     }
 
     return (
-        <form onSubmit={handleSearch}>
+        <form onSubmit={handleSearch} className="searchbar">
         <input
             type="search"
             placeholder="Cerca..."
@@ -37,7 +37,7 @@ export default function SearchBar() {
             value={search}
             onChange={(e) => setSearch(e.target.value)}
         />
-        <button type="submit">Cerca</button>
+        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
     </form>
     
     )

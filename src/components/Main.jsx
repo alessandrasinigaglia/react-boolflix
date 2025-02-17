@@ -14,7 +14,6 @@ export default function Main() {
 
     return (
         <main>
-        <h2>Lista Films</h2>
             <ul>
             {
             movies.length > 0 ? (
